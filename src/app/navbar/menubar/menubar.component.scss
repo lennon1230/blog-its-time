@@ -1,0 +1,58 @@
+.menu{
+
+    ul{
+
+        box-shadow: 0px 2px 8px #49494977;
+
+        li{
+
+            border-bottom: 1px solid rgba(75, 75, 75, 0.349);
+
+            a{
+                margin-left: 2rem;
+                padding: 1.5rem 0;
+                display: block;
+            }
+
+            a.btnMenuEnter{
+                background-color: rgb(255, 100, 10);
+                padding: 0.7rem 1rem;
+                border-radius: 10px;
+                color: #fafafa;
+                font-family: Impact;
+                width: 70px;
+                margin: 0.7rem 0;
+                margin-left: 2rem;
+                overflow-anchor: none;
+            }
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+
+        ul {
+            box-shadow: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            li {
+                border-bottom: none;
+
+                a::after{
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: rgb(255, 100, 10);
+                    transition: 0.3s ease-out;
+                }
+    
+                a:hover::after{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

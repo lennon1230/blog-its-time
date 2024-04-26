@@ -1,0 +1,14 @@
+main{
+    background-color: #fafafa;
+    margin: 3px;
+
+    section{
+
+        display: flex;
+        flex-direction: column;
+
+        app-big-card{
+            margin: 2rem 1rem;
+        }
+    }
+}

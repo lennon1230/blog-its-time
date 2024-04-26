@@ -1,0 +1,45 @@
+section{
+    width: 90vw;
+    margin: auto;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    background-color: #fafafa;
+
+    h2{
+        margin-bottom: 1rem;
+    }
+
+    .activities{
+        display: flex;
+        flex-direction: column;
+
+        .activity-item{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0;
+
+            img, .activity-title, .activity-text{
+                align-self: center;
+                margin: 0.5rem;
+            }
+            .activity-text{
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .activities{
+            flex-direction: row;
+
+            .activity-item{
+
+                img:hover{
+                    width: 90px;
+                    height: 90px;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

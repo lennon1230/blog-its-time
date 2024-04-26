@@ -1,0 +1,27 @@
+.section-index{
+    width: 90vw;
+    margin: auto;
+    padding: 3rem 0;
+    background-color: #fafafa;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .section-index{
+        flex-direction: initial;
+        flex-wrap: wrap;
+
+        app-main{
+            flex: 20 1 65%;
+        }
+
+        app-aside{
+            flex: 1 1 35%;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+section{
+    width: 90vw;
+    margin: auto;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+
+    .div-contact{
+
+        display: flex;
+        flex-direction: column;
+
+        .colum-1{
+
+            p{
+                font-size: 14px;
+                margin: 2rem 0;
+            }
+
+            .div-email{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                h2{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                span{
+                    font-weight: 600;
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .div-social{
+
+                h2{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .colum-2{
+
+            margin-top: 2rem;
+
+            form{
+
+                display: flex;
+                flex-direction: column;
+
+                input{
+                   height: 40px; 
+                   margin-bottom: 1rem;
+                   font-size: 15px;
+                }
+
+                input:hover, textarea:hover{
+                    border: 2px solid rgb(255, 100, 10);
+                }
+
+                textarea{
+                    height: 100px; 
+                    margin-bottom: 1rem;
+                    font-size: 15px;
+                }
+
+                .btnSubmit{
+                    color: #fafafa;
+                    font-family: Impact;
+                    font-size: 16px;
+                    background-color: rgb(255, 100, 10);
+                    padding: 1rem;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                .btnSubmit:hover{
+                    font-size: 120%;
+                    background-color: rgb(235, 86, 0);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        .div-contact{
+            flex-direction: row;
+
+            .colum-1, .colum-2{
+                width: 50vw;
+            }
+
+            .colum-2{
+                margin-top: 0;
+                form{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}

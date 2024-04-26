@@ -1,0 +1,32 @@
+aside{
+    
+    margin: 3px;
+    background-color: #fafafa;
+
+    h3{
+        padding: 1rem 0.2rem;
+    }
+
+    section{
+
+        display: flex;
+        flex-direction: column;
+
+        app-small-card{
+            margin: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 460px) {
+
+    aside{
+
+        section{
+
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    
+}

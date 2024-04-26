@@ -1,0 +1,44 @@
+nav{
+    box-shadow: 0px 2px 8px #49494977;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: #fafafa;
+
+    .menuMobile{
+        margin-right: 1rem;
+    }
+
+    app-menubar{
+        position: absolute;
+        background-color: #fafafa;
+        width: 100%;
+        top: 102px;
+        left: 100vw;
+        transition: all 0.4s ease-in;
+    }
+
+    .hidden{
+        left: 0;
+        
+    }
+
+    @media screen and (min-width: 767px) {
+
+        .menuMobile{
+            display: none;
+        }
+
+        app-menubar{
+            position: static;
+            width: 50%;
+            margin-right: 1rem;
+            transition: none;
+        }
+    }
+    
+}

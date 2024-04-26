@@ -1,0 +1,147 @@
+.card{
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 8px #49494977;
+
+    a{
+
+        .card-img-top{
+            width: 100%;
+            height: 200px;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    .card-body{
+
+        a{
+            .card-title{
+                font-size: 14px;
+                text-align: justify;
+                margin: 0.5rem 0.25rem;
+            }
+        }
+
+        .card-text, .publish{
+            font-size: 12px;
+            text-align: justify;
+            margin: 0 0.25rem;
+        }
+
+        .publish{
+            margin: 0.5rem 0.25rem;
+        }
+
+        .div-author{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+
+            span{
+                font-size: 10px;
+                font-weight: 600;
+                align-self: center;
+            }
+
+            a{
+                font-size: 14px;
+                font-weight: 600;
+                color: rgb(255, 38, 0);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 560px) {
+
+    .card{
+        display: flex;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+
+        a{
+            width: 100%;
+            height: 250px;
+
+            .card-img-top{
+                width: 200px;
+                height: 180px;
+                border-radius: 0;
+                box-shadow: 0px 2px 20px #494949;
+            }
+        }
+
+        .card-body{
+
+            a{
+
+                .card-title{
+                    font-size: 18px;
+                    text-align: justify;
+                    margin: 0.5rem 1rem;
+                }
+
+                .card-title:hover{
+                    color: rgb(255, 150, 0);
+                }
+            }
+
+            .card-text, .publish{
+                font-size: 14px;
+                text-align: justify;
+                margin: 0 1rem;
+            }
+    
+            .publish{
+                margin: 0.5rem 1rem;
+            }
+
+            .div-author{
+
+                margin-left: 1rem;
+                padding: 0.25rem 0;
+    
+                a{
+                    height: auto;
+                    width: auto;
+                    padding: 0 0.5rem;
+                }
+
+                a:hover{
+                    font-size: 102%;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .card{
+
+        a{
+            
+            .card-img-top{
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        .card-body{
+
+            a{
+
+                .card-title{
+                    font-size: 22px;
+                    text-align: justify;
+                    margin: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}

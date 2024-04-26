@@ -1,0 +1,42 @@
+.menuFooter{
+
+    margin: 1rem 0;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li{
+            margin: 0.5rem 1rem;
+            a{
+                color: #fafafa;
+                font-weight: 800;
+            }
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+
+        ul {
+
+            li {
+                border-bottom: none;
+
+                a::after{
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: rgb(255, 100, 10);
+                    transition: 0.3s ease-out;
+                }
+    
+                a:hover::after{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

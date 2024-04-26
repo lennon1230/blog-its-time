@@ -1,0 +1,25 @@
+.section-header{
+    height: calc(35vh + 100px);
+    width: 90vw;
+    margin: auto;
+    background-color: #fafafa;
+    padding-top: 105px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    .section-header{
+        height: calc(50vh + 100px);
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .section-header{
+        height: calc(40vh + 100px);
+    }
+}

@@ -1,0 +1,14 @@
+<nav>
+    <app-logo></app-logo>
+
+    <div class="menuMobile" (click)="btnMenu()">
+        <div *ngIf="btnMenuCondition; else elseBlock">
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="menu--v1"/>
+        </div>
+        <ng-template #elseBlock>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/delete-sign--v1.png" alt="delete-sign--v1"/>
+          </ng-template>
+    </div>
+
+    <app-menubar [class.hidden]="classHidden"></app-menubar>
+</nav>
