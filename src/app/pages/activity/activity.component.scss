@@ -1,44 +1,103 @@
-section{
+section {
     width: 90vw;
     margin: auto;
-    padding-top: 9rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
     background-color: #fafafa;
 
-    h2{
+    h2 {
         margin-bottom: 1rem;
     }
 
-    .activities{
+    .activities {
+
         display: flex;
         flex-direction: column;
+        align-items: center;
 
-        .activity-item{
+        .card {
+            width: 220px;
+            height: 160px;
+            transition: all .5s;
+            box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+                -15px -15px 30px rgba(60, 60, 60, 0.082);
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .card:hover {
+            height: 360px;
+            background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+        }
+
+        .card .header {
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            padding: 1rem 0;
+            align-items: center;
+            justify-content: center;
+            background: #212121;
+            margin-bottom: 16px;
+        }
 
-            img, .activity-title, .activity-text{
-                align-self: center;
-                margin: 0.5rem;
-            }
-            .activity-text{
-                text-align: center;
-            }
+        .card .header .img-box {
+            width: 70px;
+        }
+
+        .card .header .title {
+            font-size: 1em;
+            letter-spacing: .1em;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 4px 0 14px 0;
+            transition: all .5s;
+            color: rgb(255, 150, 0);
+        }
+
+        .card:hover .card .header .title {
+            padding: 0;
+        }
+
+        .card .content {
+            display: block;
+            text-align: left;
+            color: #212121;
+            margin: 0 18px;
+        }
+
+        .card .content p {
+            transition: all .5s;
+            font-size: .8em;
+            margin-bottom: 8px;
+        }
+
+        .card .content a {
+            color: #1d8122;
+            cursor: pointer;
+            transition: all .5s;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .card .content .btn-link:hover {
+            border-bottom: 1px solid #1d8122;
         }
     }
 
     @media screen and (min-width: 768px) {
         .activities{
             flex-direction: row;
+            justify-content: space-around;
+            height: 400px;
+        }
+    }
 
-            .activity-item{
-
-                img:hover{
-                    width: 90px;
-                    height: 90px;
-                    transition: 0.3s ease-in-out;
-                }
+    @media screen and (min-width: 1024px) {
+        .activities{
+            .card {
+                width: 270px;
             }
         }
     }

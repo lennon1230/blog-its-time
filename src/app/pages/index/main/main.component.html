@@ -2,9 +2,9 @@
 
     <section>
 
-        <app-big-card></app-big-card>
+        <app-big-card *ngFor="let n of [].constructor(paginator)"></app-big-card>
 
-        <app-big-card></app-big-card>
+        <button (click)="pagination()" [class.hidden]="classBtnHidden">More...</button>
 
     </section>
     

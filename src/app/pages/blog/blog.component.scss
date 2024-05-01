@@ -1,8 +1,12 @@
 section{
     width: 90vw;
     margin: auto;
-    padding-top: 9rem;
+    padding-top: 6rem;
     background-color: #fafafa;
+
+    .title1{
+        padding-bottom: 3rem;
+    }
 
     .div-img{
         width: 100%;
@@ -18,9 +22,9 @@ section{
 
         padding: 3rem 0;
 
-        .title{
+        /* .title{
             padding: 3rem 0;
-        }
+        } */
 
         .publish, .author, .url{
             font-size: 14px;

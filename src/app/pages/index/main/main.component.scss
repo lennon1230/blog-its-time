@@ -1,14 +1,50 @@
-main{
+main {
     background-color: #fafafa;
     margin: 3px;
 
-    section{
+    section {
 
         display: flex;
         flex-direction: column;
 
-        app-big-card{
+        app-big-card {
             margin: 2rem 1rem;
+        }
+
+        button {
+            padding: 20px 10px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: white;
+            box-shadow: rgba(255, 149, 0, 0.219) 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            width: 15rem;
+            align-self: center;
+            margin: 2rem 0;
+        }
+
+        button:hover {
+            letter-spacing: 3px;
+            background-color: hsl(24, 100%, 50%);
+            color: hsl(0, 0%, 100%);
+            box-shadow: rgb(255 150 0) 0px 7px 29px 0px;
+        }
+
+        button:active {
+            letter-spacing: 3px;
+            background-color: hsl(24, 100%, 50%);
+            color: hsl(0, 0%, 100%);
+            box-shadow: rgb(255 150 0) 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+
+        .hidden{
+            display: none;
         }
     }
 }
